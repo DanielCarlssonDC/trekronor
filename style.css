@@ -345,6 +345,17 @@ video {
 	margin: 0 auto;
 	padding: 10rem 0;
 }
+.emailinput {
+	width: 100%;
+	box-sizing: border-box;
+	height: 5rem;
+	font-size: 2rem;
+	padding: 2rem;
+	font-family: 'Cabin';
+	border: none;
+	border-radius: 1rem;
+	box-shadow: 7px 7px 15px black;
+}
 textarea {
 	width: 100%;
 	box-sizing: border-box;
@@ -357,8 +368,9 @@ textarea {
 	border: none;
 	border-radius: 1rem;
 	box-shadow: 7px 7px 15px black;
+	margin: 1rem 0;
 }
-textarea:focus {
+textarea:focus, .emailinput:focus {
     outline: none;
 }
 .submitbutton {
@@ -367,7 +379,6 @@ textarea:focus {
 	padding: 1rem;
 	border-radius: 1rem;
 	border: none;
-	margin-top: 1rem;
 	background-color: var(--blue);
 	color: var(--yellow);
 	font-family: 'Oswald';
