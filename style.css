@@ -327,11 +327,11 @@ footer {
 	padding: 5rem;
 }
 video {
-	height: 80%;
+	width: 30%;
+	max-height: 85%;
 	margin: auto;
 	border-radius: 1rem;
 	box-shadow: 5px 5px 15px black;
-	z-index: 15;
 }
 .monketitle {
 	font-size: 3rem;
