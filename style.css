@@ -337,6 +337,15 @@ video {
 	color: white;
 	text-shadow: 2px 2px 2px black;
 }
+.listframe {
+	width: max-content;
+	height: max-content;
+	margin: auto;
+}
+.listframe li, .listframe p {
+	color: var(--yellow);
+	text-shadow: 2px 2px 2px black;
+}
 .formulär {
 	position: relative;
 	width: 40%;
