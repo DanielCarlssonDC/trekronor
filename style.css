@@ -505,3 +505,12 @@ textarea:focus, .emailinput:focus {
 		text-shadow: 2px 2px 2px black;
 	}
 }
+@media print {
+	* {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	.videolink {
+		display: none;
+	}
+} 
