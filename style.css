@@ -507,11 +507,31 @@ textarea:focus, .emailinput:focus {
 	}
 }
 @media print {
-	* {
-		-webkit-print-color-adjust: exact;
-		print-color-adjust: exact;
+	header, .hero, .videolink {
+		visibility: hidden !important;
+        height: 0 !important;
 	}
-	.videolink {
-		display: none;
+	.heroheader {
+		height: max-content;
+	}
+	* {
+		color: var(--blue) !important;
+		text-shadow: none !important;
+	}
+	.artikel {
+		width: 12rem;
+	}
+	table, .artikel, .XTRA, .menykategori {
+		page-break-inside: avoid;
+	}
+	.artikelblad {
+		padding: 0;
+	}
+	footer {
+		box-shadow: none;
+	}
+	.PIZZA, .INBAKADE, .SPECIALPIZZOR, .MEXIKANSKA, .VEGETARISKA, .AMERIKANSKA, .KEBAB, 
+	.GRILL, .KYCKLING, .GYROS, .SALLAD, .RULLPIZZA, .FAMILJEPIZZA, .BARNPIZZA, .XTRA {
+		padding: 0;
 	}
 } 
