@@ -327,7 +327,7 @@ footer {
 	padding: 5rem;
 }
 video {
-	width: 30%;
+	width: max-content%;
 	max-height: 85%;
 	margin: auto;
 	border-radius: 1rem;
