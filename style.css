@@ -28,6 +28,19 @@ body::after {
 	pointer-events: none;
 	z-index: 5;
 }
+#mouseSpotlight {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+	opacity: 0.3;
+	z-index: 20;
+}
 .brödtext {
 	font-family: "Cabin";
 	font-size: 1.6rem;
@@ -195,6 +208,10 @@ nav a {
 	transition-duration: 0.2s;
 }
 nav a:hover {
+	color: #FF6F00;
+	cursor: pointer;
+}
+nav a.active {
 	color: #FF6F00;
 }
 .PIZZA, .INBAKADE, .SPECIALPIZZOR, .MEXIKANSKA, .VEGETARISKA, .AMERIKANSKA, .KEBAB, 
@@ -383,7 +400,7 @@ textarea {
 textarea:focus, .emailinput:focus {
     outline: none;
 }
-.submitbutton {
+.submitbutton, .helloworldbutton {
 	width: 100%;
 	font-size: 2.5rem;
 	padding: 1rem;
@@ -394,7 +411,7 @@ textarea:focus, .emailinput:focus {
 	font-family: 'Oswald';
 	box-shadow: 7px 7px 15px black;
 }
-.submitbutton:hover {
+.submitbutton:hover, .helloworldbutton:hover {
 	cursor: pointer;
 	background-color: var(--yellow);
 	color: var(--blue);
